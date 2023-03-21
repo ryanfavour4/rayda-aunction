@@ -1,0 +1,51 @@
+.logo_box{
+    text-align: left;
+}
+
+.count{
+    background: red;
+    color: white;
+    padding:0.5rem .8rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30%;
+    right: -20%;
+    transform: scale(0.9);
+}
+
+.gradient_bottom_text{
+    text-align: left;
+}
+
+.gradient{
+    background: linear-gradient(
+        -45deg, 
+        #FEDF82, 
+        #FC9E77,
+        #D46CC6,
+        #9C27E8,
+        #9C27E8
+      );
+      min-height: 200px;
+      border-radius: 10px;
+}
+
+.indicator{
+    background: #FFFAEB;
+    color: #B54708;
+    font-size: small;
+    padding: .8em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.dot{
+    padding: 2px;
+    height: 2px;
+    width: 2px;
+    display: inline;
+    background: #F79009;
+    border-radius: 50%;
+}
