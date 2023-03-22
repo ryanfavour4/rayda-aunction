@@ -4,6 +4,7 @@ import style from "../../css/home_style/home.module.css";
 import BellIcon from "../../image/BellIcon";
 import plate_img from "../../image/duo-purple-plates.png";
 import { BiLike } from "react-icons/bi";
+import Items from "./components/Items";
 
 function Homepage() {
   return (
@@ -67,6 +68,34 @@ function Homepage() {
               </Button>
             </div>
           </Box>
+        </Box>
+
+        <Box
+          padding="20px"
+          borderRadius="10px"
+          style={{ backgroundColor: "white" }}
+          boxShadow={3}
+          marginTop={10}
+          marginBottom={10}
+        >
+          <Box
+            display="flex"
+            padding="30px 0 15px"
+            justifyContent="space-between"
+          >
+            <div className={style.logo_box}>
+              <Typography variant="h6" fontWeight="600">
+                Featured Items
+              </Typography>
+            </div>
+            <Button variant="contained" style={{ backgroundColor: "white" }}>
+              <Typography fontWeight="600" fontSize={14} color={"grey"}>
+                View Auction
+              </Typography>
+            </Button>
+          </Box>
+          <hr />
+          <Items />
         </Box>
       </Container>
     </div>
